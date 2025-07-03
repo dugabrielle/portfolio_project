@@ -1,1 +1,52 @@
 // app global css in SCSS form
+
+body.body--dark {
+  background-color: $dark-page !important;
+  color: white !important;
+}
+
+.q-toggle__track {
+  background-color: #8a8888 !important;
+}
+
+body.body--light {
+  background-color: $light-page !important;
+  color: black !important;
+}
+
+.custom-header {
+  border-bottom: 1px solid #000;
+  color: inherit;
+  font-family: "Inter", sans-serif;
+}
+
+
+.q-btn--flat .q-btn__content {
+  color: var(--q-color-secondary);
+  border-bottom: 2px solid $accent;
+  transition: all 0.2s ease;
+  margin: 1rem;
+  font-size: 15px;
+  
+
+}
+
+.q-btn--flat:hover .q-btn__content {
+  color: $accent !important;
+  font-weight: 600;
+}
+
+
+body.desktop .q-focusable:focus .q-focus-helper,
+body.desktop .q-hoverable:hover .q-focus-helper {
+  background: inherit;
+  opacity: 0;
+}
+body.ios .q-hoverable:active .q-focus-helper {
+  background: inherit;
+  opacity: 0;
+}
+.q-focus-helper {
+  opacity: 0;
+  transition: unset;
+}
