@@ -12,16 +12,18 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-$primary   : transparent; 
-$secondary : #7a44d8; // buttons, links, ícones
-$accent    : #6f4cad; // hover  
+$primary: transparent;
+$secondary: #7a44d8; // buttons, links, ícones
+$accent: #6f4cad; // hover
 
-$dark      : #1D1D1D;
-$dark-page : #121212;
+$dark: #1d1d1d;
+$dark-page: #121212;
+$dark-footer: #010101ff;
 
 $light-page: #e1dbec;
+$light-footer: #e2e1e2;
 
-$positive  : #21BA45;
-$negative  : #C10015;
-$info      : #31CCEC;
-$warning   : #F2C037;
+$positive: #21ba45;
+$negative: #c10015;
+$info: #31ccec;
+$warning: #f2c037;

@@ -1,6 +1,7 @@
 // app global css in SCSS form
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Smooch+Sans:wght@100..900&display=swap');
 
-body.body--dark {
+body.body--dark .custom-footer {
   background-color: $dark-page !important;
   color: white !important;
 }
@@ -9,17 +10,26 @@ body.body--dark {
   background-color: #8a8888 !important;
 }
 
-body.body--light {
+body.body--light .custom-footer {
   background-color: $light-page !important;
+  color: black !important;
+}
+
+body.body--dark .custom-footer {
+  background-color: $dark-footer !important;
+  color: white !important;
+}
+
+body.body--light .custom-footer {
+  background-color: $light-footer !important;
   color: black !important;
 }
 
 .custom-header {
   border-bottom: 1px solid #000;
   color: inherit;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
-
 
 .q-btn--flat .q-btn__content {
   color: var(--q-color-secondary);
@@ -27,15 +37,12 @@ body.body--light {
   transition: all 0.2s ease;
   margin: 1rem;
   font-size: 15px;
-  
-
 }
 
 .q-btn--flat:hover .q-btn__content {
   color: $accent !important;
   font-weight: 600;
 }
-
 
 body.desktop .q-focusable:focus .q-focus-helper,
 body.desktop .q-hoverable:hover .q-focus-helper {
@@ -49,4 +56,27 @@ body.ios .q-hoverable:active .q-focus-helper {
 .q-focus-helper {
   opacity: 0;
   transition: unset;
+}
+
+.q-footer .social-btn.q-btn--flat .q-btn__content {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.text-social {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+.social-link {
+  font-size: 17px;
+  margin-right: 5px;
+}
+
+.social-link :hover {
+  transform: scale(1.5);
 }

@@ -1,16 +1,16 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lF">
     <!-- HEADER -->
-    <q-header elevated class="custom-header ">
+    <q-header elevated class="custom-header">
       <q-toolbar>
         <q-toolbar-title class="row justify-end items-center">
           <!-- LOGO -->
           <!-- LINKS -->
           <div class="q-gutter-sm">
-            <q-btn flat dense label="Home" href="#home"/>
+            <q-btn flat dense label="Home" href="#home" />
             <q-btn flat dense label="Sobre" href="#sobre" />
-            <q-btn flat dense label="Projetos" href="#projetos"/>
-            <q-btn flat dense label="Contato" href="#contato"/>
+            <q-btn flat dense label="Projetos" href="#projetos" />
+            <q-btn flat dense label="Contato" href="#contato" />
           </div>
 
           <div class="q-pl-lg">
@@ -29,6 +29,25 @@
       <h2 class="text-center">teste</h2>
       <router-view />
     </q-page-container>
+    <q-footer elevated class="custom-footer q-pa-lg">
+      <div class="column items-start">
+        <div class="text-social" style="margin-bottom: 8px">Minhas Redes</div>
+        <div class="row q-gutter-sm btn-style">
+          <a href="#" target="_blank" class="social-link">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+          <a href="#" target="_blank" class="social-link">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          <a href="#" target="_blank" class="social-link">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="#" target="_blank" class="social-link">
+            <i class="fab fa-pinterest fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </q-footer>
   </q-layout>
 </template>
 
