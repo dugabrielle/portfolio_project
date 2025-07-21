@@ -1,7 +1,7 @@
 // app global css in SCSS form
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Smooch+Sans:wght@100..900&display=swap');
 
-body.body--dark .custom-footer {
+body.body--dark .custom-footer .v-border {
   background-color: $dark-page !important;
   color: white !important;
 }
@@ -10,7 +10,7 @@ body.body--dark .custom-footer {
   background-color: #8a8888 !important;
 }
 
-body.body--light .custom-footer {
+body.body--light .custom-footer .v-border {
   background-color: $light-page !important;
   color: black !important;
 }
@@ -44,6 +44,10 @@ body.body--light .custom-footer {
   font-weight: 600;
 }
 
+.menu-btn .q-btn__content {
+  border-bottom: none !important;
+}
+
 body.desktop .q-focusable:focus .q-focus-helper,
 body.desktop .q-hoverable:hover .q-focus-helper {
   background: inherit;
@@ -67,16 +71,78 @@ body.ios .q-hoverable:active .q-focus-helper {
 .text-social {
   font-size: 20px;
   font-weight: bold;
-  margin-top: 1em;
   text-transform: uppercase;
   font-family: 'Smooch Sans', sans-serif;
 }
 
-.social-link {
-  font-size: 17px;
-  margin-right: 5px;
+.text-social-bt {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Smooch Sans', sans-serif;
+  text-align: center;
 }
 
-.social-link :hover {
+.social-link {
+  color: $secondary;
+  font-size: 17px;
+  margin-right: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-link:hover i {
   transform: scale(1.5);
+  color: $accent;
+}
+
+.social-link .email-text {
+  text-decoration: none !important;
+  color: inherit !important;
+  line-height: 1;
+}
+
+.custom-row-footer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.v-border {
+  border-left: 1px solid;
+  height: auto;
+  align-self: stretch;
+  margin: 0 16px;
+}
+
+.h-border {
+  border-top: 1px solid;
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+@media (max-width: 600px) {
+  .custom-row-footer {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .vertical-border {
+    border-left: none;
+    border-top: 2px solid;
+    width: 100%;
+    align-self: center;
+  }
 }
